@@ -1,0 +1,226 @@
+/**************************GENERAL*********************/
+
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active{
+	background: #3AAFAF;
+	border-radius: 3px;
+  border: solid #3AAFAF 10px;
+	}
+
+img{
+	width: 100%;
+}
+
+.title{
+	font-size: 22px;
+}
+
+main {
+	min-height: calc(100vh - 131.359px - 154px);
+}
+/**************************HEADER*********************/
+header{
+	text-align: center;
+}
+
+header img{
+	width: 300px;
+}
+header.logo-container{
+	padding: 20px;
+}
+/**************************NAV*********************/
+#nav{
+	background: #2B475C;
+  list-style-type: none;
+  border: #2B475C solid;
+
+}
+#nav li{
+	display: inline;
+	padding: 20px ;
+}
+#nav a{
+	color: #fff;
+}
+
+/**************************GALLERY*********************/
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery .item{
+	width: 50%;
+	float: left;
+	padding: 15px;
+}
+
+#gallery .picture{
+	line-height: 0;
+}
+
+
+/**************************FOOTER*********************/
+
+
+footer.main{
+	text-align: center;
+	padding: 30px;
+	font-size: 10px;
+}
+
+footer.main img{
+	width: 40px;
+}
+
+footer.main a{
+	display: inline-block;
+	padding: 10px 12px;
+}
+
+
+/**************************ABOUT*********************/
+
+#about img {
+	border-radius: 100%;
+	padding: 15px 0;
+}
+
+#about .description{
+	padding: 40px;
+}
+
+/**************************CONTACT*********************/
+
+#contatti ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+#contatti li{
+	padding: 10px 0;
+}
+
+/**************************MONITOR*********************/
+
+@media only screen and (min-width: 992px){
+  #gallery .item{
+	width: 33.3333%;
+  }
+/*Gallery*/ 
+  
+  #gallery .item:nth-child(3n + 1){
+  	clear: left;
+  }
+
+  #gallery .item:hover{
+  opacity: .7;
+}
+
+#gallery .item:hover{
+	transition: opacity .3s;
+}
+
+/*Nav*/ 
+
+#nav a:hover {
+	border-bottom: #3AAFAF solid;
+}
+/*Footer*/ 
+
+footer.main img:hover{
+	opacity: 0.7;
+}
+
+footer.main img:hover{
+	transition: .3s;
+}
+
+/*About*/
+
+#about .profile-pic{
+	width: 50%;
+	float: left;
+	padding: 15px;
+	text-align: center;
+}
+
+#about img{
+	width: 70%;
+	
+}
+
+/**************************CONTACT*********************/
+
+#contatti .info, #contatti .recapiti{
+	padding: 20px 20px 20px
+}
+#contatti .info{
+	width: 70%;
+	float: left;
+	
+}
+
+#contatti .recapiti{
+	width: 30%;
+	float: right;
+}
+
+#contatti .material-symbols-outlined{
+	float: left;
+}
+
+#contatti a{
+	padding: 10px;
+
+}
+/**************************GALLERY SMARTPHONE*********************/
+
+@media only screen and (max-width: 320px){
+
+#gallery .item:last-child{
+	clear: left;
+  }
+#contatti a{
+	padding: 15px;
+
+}
+
+}
+
+@media only screen and (max-width: 499px){
+
+#gallery .item:nth-child(1n + 1){
+  clear: left;
+}
+
+}
